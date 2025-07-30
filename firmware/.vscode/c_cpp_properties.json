@@ -1,0 +1,37 @@
+{
+    "configurations": [
+        {
+            "name": "ESP-IDF",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${IDF_PATH}/components/**",
+                "${workspaceFolder}/managed_components/**",
+                "${IDF_PATH}/components/esp_common/include",
+                "${IDF_PATH}/components/esp_system/include",
+                "${IDF_PATH}/components/freertos/include",
+                "${IDF_PATH}/components/driver/include",
+                "${IDF_PATH}/components/esp32/include",
+                "${IDF_PATH}/components/newlib/platform_include",
+                "${workspaceFolder}/build/config"
+            ],
+            "defines": [
+                "ESP_PLATFORM",
+                "IDF_VER=\"${env:IDF_VERSION}\""
+            ],
+            "compilerPath": "${env:IDF_TOOLS_PATH}/tools/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-x64",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}",
+                    "${IDF_PATH}/components"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "compileCommands": "${workspaceFolder}/build/compile_commands.json",
+            "configurationProvider": "espressif.esp-idf-extension"
+        }
+    ],
+    "version": 4
+}
