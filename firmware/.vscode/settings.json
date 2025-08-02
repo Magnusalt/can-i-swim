@@ -11,8 +11,8 @@
     "--query-driver=/Users/magnus/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc",
     "--compile-commands-dir=/Users/magnus/Source/can-i-swim/firmware/build"
   ],
-  "idf.port": "/dev/tty.usbmodem1142301",
-  "idf.monitorPort": "/dev/tty.usbmodem1142301",
+  "idf.port": "/dev/tty.usbmodem142301",
+  "idf.monitorPort": "/dev/tty.usbmodem142301",
   "idf.flashType": "UART",
   "files.associations": {
     "lvgl.h": "c"
